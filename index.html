@@ -250,9 +250,10 @@ section.dark strong{color:var(--bg)}
 .testimonial-meta .context{display:block;color:var(--ink-mute);font-size:.85rem;margin-top:.1em}
 .testimonial-quote{color:var(--ink);line-height:1.6;font-size:.97rem;margin:0}
 .testimonial-quote strong{color:var(--primary)}
+.testimonial-objection{display:inline-block;margin-top:.5em;background:var(--warn-bg);color:var(--warn);padding:.2em .65em;border-radius:5px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
 @media (min-width:720px){
   .testimonials{grid-template-columns:1fr 1fr}
-  .testimonials .testimonial:nth-child(5){grid-column:1/-1}
+  .testimonials .testimonial:last-child:nth-child(odd){grid-column:1/-1}
 }
 
 /* ===== Garantía ===== */
@@ -405,28 +406,28 @@ footer .tiny{color:#6E665C}
     <div class="piezas">
       <div class="pieza">
         <span class="pieza-num">1</span>
-        <img src="imagens/02-mockup-pdf-capa.webp" alt="Capa del recetario Multi-Pet Nutrición Natural — 40 recetas caseras para perro y gato" class="pieza-img" loading="lazy" />
+        <img src="imagens/area-recetas.webp" alt="Captura real del área de membros mostrando las 25 recetas para perro con filtros por etapa, proteína, tiempo y búsqueda" class="pieza-img" loading="lazy" />
         <h3>Guía PDF — 40 recetas caseras</h3>
         <p>25 perro (9 cachorro · 10 adulto · 6 senior) + 15 gato (5 gatito · 7 adulto · 3 senior, con énfasis en taurina). Cada receta: ingredientes accesibles del supermercado, preparación en 15 minutos, porción base, conservación y notas.</p>
       </div>
 
       <div class="pieza">
         <span class="pieza-num">2</span>
-        <img src="imagens/03-calculadora-tablet.webp" alt="Calculadora Multi-Pet en Google Sheets mostrando datos del perro y porción diaria calculada" class="pieza-img" loading="lazy" />
+        <img src="imagens/area-calculadora.webp" alt="Captura real de la Calculadora Multi-Pet en uso — formulario con datos del peludo y cálculo de porción diaria automático" class="pieza-img" loading="lazy" />
         <h3>Calculadora Multi-Pet — Sheets duplicable</h3>
         <p>Llenas 6 datos del peludo (especie, peso, etapa, castración, actividad, condición). La planilla calcula la porción diaria. Fórmula NRC validada con 41 combinaciones tabuladas. Una versión para perro, otra para gato.</p>
       </div>
 
       <div class="pieza">
         <span class="pieza-num">3</span>
-        <img src="imagens/04-tabla-prohibidos.webp" alt="Tabla de alimentos prohibidos para perro impresa y pegada en una nevera de cocina casera" class="pieza-img" loading="lazy" />
+        <img src="imagens/area-prohibidos.webp" alt="Captura real de la tabla de alimentos prohibidos en el área de membros — toggle perro/gato, búsqueda en tiempo real y badges de riesgo" class="pieza-img" loading="lazy" />
         <h3>Tabla de Alimentos Prohibidos</h3>
         <p>1 página imprimible. Cara A: prohibidos perro · Cara B: prohibidos gato. Cada alimento con nivel de riesgo (CRÍTICO / GRAVE / MODERADO) y síntomas. Imprimís una vez. Pegás en la cocina. Listo.</p>
       </div>
 
       <div class="pieza">
         <span class="pieza-num">4</span>
-        <img src="imagens/05-timeline-14d.webp" alt="Plan visual de transición de 14 días: 14 boles mostrando la transición gradual del pienso a la comida casera natural" class="pieza-img" loading="lazy" />
+        <img src="imagens/area-transicion.webp" alt="Captura real del checklist interactivo del plan de transición 14 días — barra de progreso y bloques marcables que guardan automáticamente" class="pieza-img" loading="lazy" />
         <h3>Plan de Transición 14 Días</h3>
         <p>Día por día: qué porcentaje de pienso y qué porcentaje de casera servir, qué señales observar, cuándo pausar. Versiones leve diferentes para perro y gato (los gatos suelen tardar más en aceptar).</p>
       </div>
@@ -444,7 +445,7 @@ footer .tiny{color:#6E665C}
     <div style="background:linear-gradient(135deg,var(--action-10) 0%,var(--bg-card) 100%);border:2px dashed var(--action-dark);border-radius:var(--radius-lg);padding:2em 1.8em;text-align:center;max-width:640px;margin:0 auto">
       <span style="display:inline-block;background:var(--action);color:var(--primary);font-size:.78rem;font-weight:800;padding:.25em .9em;border-radius:30px;letter-spacing:.1em;margin-bottom:1em;text-transform:uppercase">🎁 Bonus gratis hoy</span>
       <h3 style="color:var(--primary);margin-bottom:.5em">Manual de Primeros Auxilios Alimentarios</h3>
-      <img src="imagens/10-bonus-manual.webp" alt="Manual de Primeros Auxilios Alimentarios abierto sobre una mesa de cocina, junto a un kit de emergencia, termómetro y libreta con número del veterinario" class="bonus-img" loading="lazy" />
+      <img src="imagens/area-bonus.webp" alt="Captura real del Manual de Primeros Auxilios Alimentarios en el área de membros — 10 señales de alerta + casos específicos en acordeón + contactos de emergencia" class="bonus-img" loading="lazy" />
       <p class="muted" style="margin-bottom:.6em">Qué hacer si tu peludo consumió algo tóxico · 10 señales de alerta (vómito, letargia, convulsiones) · kit básico en casa · cuándo correr al veterinario.</p>
       <p class="tiny"><em>Valor real $19.90 USD — incluido gratis con tu compra hoy.</em></p>
     </div>
@@ -627,6 +628,54 @@ footer .tiny{color:#6E665C}
           </div>
         </div>
         <p class="testimonial-quote">Compré Multi-Pet pensando solo en las recetas. <strong>El bonus del Manual de Primeros Auxilios fue lo que me terminó salvando.</strong> Hace 2 meses mi hijo dejó la mitad de un alfajor de chocolate en el piso, Coco lo encontró antes que yo. Mi primer impulso fue entrar en pánico — pero abrí el manual en el celular, vi los pasos exactos (cantidad consumida, llamar al vet con info concreta, no inducir vómito sin orden), y en 15 minutos estábamos en la clínica con todo el contexto. La vet me dijo que llegar con esa información <strong>hizo toda la diferencia</strong>. Pagué $14.90 y por ese manual ya valió 100 veces.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">VL</div>
+          <div class="testimonial-meta">
+            <span class="name">Verónica L.</span>
+            <span class="context">Madre ocupada de Rocco (border collie, 4 años)</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Soy madre de 2 nenes pequeños y trabajo full-time. Pensé que cocinarle a Rocco iba a ser "otro pendiente" más. <strong>La sorpresa: cocino sus comidas el domingo en 1.5 horas y le alcanza para toda la semana</strong> — mientras los nenes ven dibujos en la cocina, yo armo las porciones en tuppers de freezer. Ahora cocinarle es más rápido que ir al pet shop a comprar bolsa nueva.</p>
+        <span class="testimonial-objection">Si pensás: "no tengo tiempo"</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">EV</div>
+          <div class="testimonial-meta">
+            <span class="name">Esteban V.</span>
+            <span class="context">Dueño de Tobías (mestizo, 3 años) — primera vez cocinando</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Yo cocinaba arroz quemado y huevo crudo o duro. Nunca había seguido una receta en mi vida. Tobías es lo más importante que tengo y quería darle mejor — pero pensé "esto no es pa mí". <strong>La receta 1 del recetario fue como armar un Lego: hervir esto, hervir aquello, mezclar. Listo.</strong> Hoy Tobías come distinto cada día y yo gané confianza para cocinar para mí también. Cosas que pasan.</p>
+        <span class="testimonial-objection">Si pensás: "no sé cocinar"</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar gato">RP</div>
+          <div class="testimonial-meta">
+            <span class="name">Renata P.</span>
+            <span class="context">Madre de Cleo (gata exigente, 5 años)</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Cleo es lo más exigente que conozco — rechazaba 3 de cada 4 alimentos que le ofrecía, incluso pienso premium. Compré Multi-Pet con expectativa baja: "si come 5 de las 15 recetas ya está bien". <strong>Sorpresa: acepta 12.</strong> La clave fue tibiar la comida los primeros días (la guía lo decía y yo no le había prestado atención) y empezar por las recetas con corazón de pollo y sardina, que son las más palatables. Ahora come variado y yo dejé de pelearme con el plato.</p>
+        <span class="testimonial-objection">Si pensás: "mi peludo no va a aceptar"</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">FM</div>
+          <div class="testimonial-meta">
+            <span class="name">Federico M.</span>
+            <span class="context">Tutor de Manolo (mestizo, 3 años) — vive en ciudad chica</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Vivo en una ciudad chica donde el pet shop más cercano tiene 4 marcas de pienso y la "premium" cuesta tres veces lo que pago en mi supermercado por pollo y arroz. <strong>Lo que me convenció de Multi-Pet fue ver la lista de ingredientes: pollo, arroz, zanahoria, calabaza, avena, huevo.</strong> Cosas que mi almacén tiene siempre. Hace 5 semanas que cocino para Manolo y la única vez que improvisé fue un día sin calabaza — usé batata, salió bien.</p>
+        <span class="testimonial-objection">Si pensás: "¿funcionará donde vivo?"</span>
       </div>
 
     </div>
