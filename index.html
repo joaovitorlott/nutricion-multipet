@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Multi-Pet Nutrición Natural — Comida casera para perro y gato</title>
+<meta name="description" content="40 recetas caseras (25 perro + 15 gato) + calculadora multi-pet + tabla de alimentos prohibidos + plan de transición 14 días. $14.90 USD." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet" />
+
+<!-- ============================================== -->
+<!-- META PIXEL (substituir PIXEL_ID antes de subir) -->
+<!-- ============================================== -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+
+<style>
+:root{
+  /* Paleta "Cozinha Naturalista" */
+  --primary:#1E3A2F;       /* verde garrafa profundo */
+  --primary-soft:#2D5142;
+  --primary-10:#E8EDE9;
+  --primary-20:#D0DAD3;
+
+  --action:#D9A441;        /* mostarda dourada — CTAs */
+  --action-dark:#B5862C;
+  --action-10:#FCF4DF;
+  --action-20:#F8E9C2;
+
+  --bg:#F7F2E7;            /* creme quente */
+  --bg-deep:#EFE7D2;       /* creme mais profundo p/ seções alternadas */
+  --bg-card:#FFFCF4;       /* cards levemente mais claros que o fundo */
+
+  --ink:#2A2520;           /* marrom-escuro quase preto */
+  --ink-soft:#5C5247;
+  --ink-mute:#8A7F70;
+
+  --warn:#C76A4A;          /* terracota leve — acentos pontuais (dor) */
+  --warn-bg:#FBE9DD;
+
+  --shadow-sm:0 2px 8px rgba(42,37,32,.06);
+  --shadow:0 6px 24px rgba(42,37,32,.10);
+  --shadow-cta:0 8px 24px rgba(217,164,65,.32);
+  --radius:14px;
+  --radius-lg:20px;
+  --maxw:720px;
+}
+*{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.65}
+
+/* ===== Imagens (regras globais) ===== */
+img{max-width:100%;height:auto;display:block}
+.hero-image{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow);margin:2em 0;display:block}
+.pieza-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:1em;background:var(--bg-deep)}
+.compare-image{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;margin-bottom:1em;background:var(--bg-deep)}
+.bonus-img{width:100%;max-width:420px;margin:1.2em auto;border-radius:12px;display:block;box-shadow:var(--shadow-sm)}
+.duo-pets{display:grid;grid-template-columns:1fr 1fr;gap:.8em;margin:1.5em 0}
+.duo-pets img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
+.eco-image{width:100%;max-width:420px;margin:1.4em auto 0;border-radius:12px;display:block;box-shadow:var(--shadow-sm);aspect-ratio:1/1;object-fit:cover}
+
+/* ===== Tipografia ===== */
+h1,h2,h3,h4{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--primary);font-weight:800;letter-spacing:-.025em;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2rem,5.4vw,3.4rem);font-weight:900;letter-spacing:-.035em;line-height:1.1}
+h2{font-size:clamp(1.55rem,3.6vw,2.2rem);font-weight:800;letter-spacing:-.025em}
+h3{font-size:clamp(1.18rem,2.5vw,1.45rem);font-weight:700;color:var(--ink);letter-spacing:-.015em}
+h4{font-size:clamp(1.05rem,2vw,1.2rem);font-weight:700;color:var(--primary);letter-spacing:-.01em}
+p{margin:0 0 1em}
+strong{color:var(--ink);font-weight:600}
+em{font-style:italic;color:var(--primary-soft)}
+a{color:var(--action-dark);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--primary)}
+.muted{color:var(--ink-soft)}
+.tiny{font-size:.85rem;color:var(--ink-mute);line-height:1.5}
+.center{text-align:center}
+
+/* ===== Top bar ===== */
+.bar{background:var(--primary);color:var(--bg);text-align:center;font-size:.92rem;padding:.7em 1em;letter-spacing:.02em;font-weight:500}
+.bar strong{color:var(--action)}
+
+/* ===== Layout / sections ===== */
+section{padding:clamp(2.5rem,5.5vw,4.5rem) 1.2rem}
+section .wrap{max-width:var(--maxw);margin:0 auto}
+section.alt{background:var(--bg-deep)}
+section.dark{background:var(--primary);color:var(--bg)}
+section.dark h1,section.dark h2,section.dark h3,section.dark h4{color:var(--action)}
+section.dark .muted,section.dark p{color:rgba(247,242,231,.88)}
+section.dark strong{color:var(--bg)}
+
+/* ===== Hero ===== */
+.hero{padding-top:clamp(2.6rem,5vw,4rem);padding-bottom:clamp(2.8rem,6vw,4.5rem)}
+.eyebrow{display:inline-block;background:var(--primary-10);color:var(--primary);padding:.4em 1em;border-radius:30px;font-size:.85rem;font-weight:600;letter-spacing:.04em;margin-bottom:1.2em;text-transform:uppercase}
+.hero h1{margin-bottom:.45em;max-width:680px}
+.hero .sub{font-size:clamp(1.05rem,2.1vw,1.22rem);max-width:680px;margin-bottom:1.8em;color:var(--ink-soft);line-height:1.55}
+.hero-bullets{list-style:none;padding:0;margin:0 0 2em;display:grid;grid-template-columns:1fr;gap:.65em}
+.hero-bullets li{padding-left:1.85em;position:relative;font-size:1.02rem}
+.hero-bullets li::before{content:"";position:absolute;left:.1em;top:.55em;width:.9em;height:.9em;background:var(--action);border-radius:50%}
+.hero-bullets li::after{content:"✓";position:absolute;left:.27em;top:.05em;color:var(--primary);font-weight:800;font-size:.85em}
+
+/* Hero media */
+.hero-media{margin:2.2em 0;background:var(--bg-card);border-radius:var(--radius-lg);padding:2em 1.5em;text-align:center;border:1.5px dashed var(--primary-20);box-shadow:var(--shadow-sm)}
+.hero-media .placeholder{padding:3em 1em;color:var(--ink-mute);font-family:'Inter',system-ui,sans-serif;font-style:italic;font-size:1.15rem;line-height:1.4}
+
+/* ===== CTA ===== */
+.cta{display:inline-block;background:var(--action);color:var(--primary);font-weight:800;font-size:1.1rem;text-decoration:none;padding:1.05em 2em;border-radius:12px;border:0;box-shadow:var(--shadow-cta);transition:transform .15s ease,box-shadow .15s ease,background .15s ease;cursor:pointer;letter-spacing:.005em;line-height:1.2;font-family:'Inter',sans-serif}
+.cta:hover{background:var(--action-dark);color:var(--bg);transform:translateY(-2px);box-shadow:0 12px 30px rgba(217,164,65,.4)}
+.cta-row{margin:1.8em 0 1em}
+.cta-micro{display:block;margin-top:.85em;color:var(--ink-soft);font-size:.93rem;font-weight:500}
+.cta.dark{background:var(--primary);color:var(--action)}
+.cta.dark:hover{background:var(--primary-soft);color:var(--bg)}
+
+/* ===== Identificação dor (Para ti si) ===== */
+.qual h2{text-align:center;margin-bottom:1.5em;max-width:600px;margin-left:auto;margin-right:auto}
+.qual ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:1em}
+.qual li{background:var(--bg-card);padding:1.2em 1.3em 1.2em 3em;border-radius:var(--radius);position:relative;box-shadow:var(--shadow-sm);border-left:4px solid var(--warn);line-height:1.55}
+.qual li::before{content:"☑";position:absolute;left:.95em;top:.85em;color:var(--warn);font-weight:800;font-size:1.4em}
+
+/* ===== Solução / 4 piezas ===== */
+.intro-block{max-width:620px;margin:0 auto 2.5em;text-align:center}
+.piezas{display:grid;grid-template-columns:1fr;gap:1.2em;margin-top:1.6em}
+.pieza{background:var(--bg-card);border-radius:var(--radius);padding:1.5em;box-shadow:var(--shadow-sm);border-top:4px solid var(--primary);position:relative}
+.pieza .pieza-num{position:absolute;top:-14px;left:1.4em;background:var(--primary);color:var(--bg);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;font-family:'Inter',system-ui,sans-serif}
+.pieza .icon{font-size:1.8em;margin-bottom:.4em;display:block}
+.pieza h3{font-family:'Inter',system-ui,sans-serif;color:var(--primary);margin-bottom:.3em}
+.pieza p{margin:0;color:var(--ink-soft);font-size:.97rem;line-height:1.55}
+.pieza-sintese{text-align:center;margin-top:2em;font-size:1.05rem;color:var(--ink);max-width:640px;margin-left:auto;margin-right:auto;line-height:1.55}
+.pieza-sintese strong{color:var(--primary)}
+
+/* ===== Benefícios ===== */
+.benefits{list-style:none;padding:0;margin:1.8em 0 0;display:grid;grid-template-columns:1fr;gap:1em}
+.benefits li{background:var(--bg-card);padding:1.1em 1.2em 1.1em 3em;border-radius:var(--radius);box-shadow:var(--shadow-sm);position:relative;line-height:1.55}
+.benefits li::before{content:"✓";position:absolute;left:1em;top:.85em;color:var(--action-dark);font-weight:800;font-size:1.3em;background:var(--action-20);width:1.4em;height:1.4em;border-radius:50%;display:flex;align-items:center;justify-content:center}
+
+/* ===== Antes/Después + Pasos ===== */
+.compare{display:grid;grid-template-columns:1fr;gap:1.1em;margin-top:1.6em}
+.compare .col{background:var(--bg-card);border-radius:var(--radius);padding:1.5em;box-shadow:var(--shadow-sm)}
+.compare .col.antes{border-left:5px solid var(--warn)}
+.compare .col.despues{border-left:5px solid var(--action)}
+.compare h3{font-family:'Inter',sans-serif;font-weight:700;font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1em;color:var(--ink)}
+.compare .antes h3{color:var(--warn)}
+.compare .despues h3{color:var(--action-dark)}
+.compare ul{list-style:none;padding:0;margin:0;display:grid;gap:.75em}
+.compare li{padding-left:1.6em;position:relative;font-size:.97rem;line-height:1.5}
+.compare .antes li::before{content:"✗";position:absolute;left:0;top:0;color:var(--warn);font-weight:800;font-size:1.1em}
+.compare .despues li::before{content:"✓";position:absolute;left:0;top:0;color:var(--action-dark);font-weight:800;font-size:1.1em}
+
+.steps{display:grid;grid-template-columns:1fr;gap:1.2em;margin-top:2em}
+.step{background:var(--bg-card);border-radius:var(--radius);padding:1.4em 1.4em 1.4em 5em;position:relative;box-shadow:var(--shadow-sm)}
+.step .num{position:absolute;left:1.1em;top:1.3em;width:2.6em;height:2.6em;background:var(--primary);color:var(--action);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.4em;font-family:'Inter',system-ui,sans-serif}
+.step h3{margin-bottom:.3em;font-family:'Inter',system-ui,sans-serif;color:var(--primary)}
+.step p{margin:0;color:var(--ink-soft);font-size:.97rem;line-height:1.55}
+
+/* ===== Economia table ===== */
+.eco{margin-top:1.8em;background:var(--bg-card);border-radius:var(--radius-lg);padding:1.8em 1.5em;box-shadow:var(--shadow);border:1px solid var(--primary-10)}
+.eco .eco-title{font-family:'Inter',sans-serif;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:1.3em;text-align:center}
+.eco-grid{display:grid;grid-template-columns:1fr;gap:1em}
+.eco-cell{padding:1.3em 1em;border-radius:12px;text-align:center}
+.eco-cell.bad{background:var(--warn-bg);color:var(--warn)}
+.eco-cell.mid{background:var(--action-10);color:var(--action-dark)}
+.eco-cell.good{background:var(--primary-10);color:var(--primary)}
+.eco-cell .price{font-family:'Inter',system-ui,sans-serif;font-size:2rem;font-weight:700;display:block;margin-bottom:.3em;line-height:1}
+.eco-cell .label{font-size:.82rem;font-weight:700;display:block;margin-bottom:.35em;text-transform:uppercase;letter-spacing:.05em}
+.eco-cell .note{font-size:.85rem;opacity:.88;font-weight:500}
+.eco-callout{margin-top:1.6em;background:var(--primary);color:var(--bg);padding:1.4em 1.5em;border-radius:var(--radius);text-align:center;font-weight:500;font-size:1.02rem;line-height:1.5}
+.eco-callout strong{color:var(--action)}
+.eco-savings{margin-top:1.4em;text-align:center;font-family:'Inter',system-ui,sans-serif;font-style:italic;color:var(--primary-soft);font-size:1.05rem}
+.eco-savings strong{color:var(--primary);font-style:normal}
+
+/* ===== Pricebox ===== */
+.pricebox{margin:2.2em auto 0;max-width:560px;background:var(--bg-card);border-radius:22px;padding:2.5em 1.8em;box-shadow:0 16px 44px rgba(42,37,32,.13);border:2.5px solid var(--primary);text-align:center;position:relative}
+.pricebox::before{content:"OFERTA DE LANZAMIENTO";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--action);color:var(--primary);padding:.35em 1.2em;border-radius:30px;font-size:.72rem;font-weight:800;letter-spacing:.12em}
+.pricebox .what{font-size:.97rem;color:var(--ink-soft);margin-bottom:1.6em;line-height:1.55}
+.pricebox .what strong{display:block;font-family:'Inter',system-ui,sans-serif;font-size:1.35rem;color:var(--primary);margin-bottom:.4em;font-weight:600}
+.pricebox .anchors{display:flex;flex-direction:column;gap:.3em;margin-bottom:1.2em}
+.pricebox .strike{font-size:1.05rem;color:var(--ink-mute);text-decoration:line-through;font-weight:500}
+.pricebox .price-hoy{font-family:'Inter',system-ui,sans-serif;font-size:3.2rem;font-weight:800;color:var(--primary);line-height:1;margin:.3em 0 .2em;display:block}
+.pricebox .price-hoy small{font-size:.42em;font-weight:600;color:var(--ink-soft);font-family:'Inter',sans-serif;vertical-align:.4em;letter-spacing:.02em}
+.pricebox .price-tag{font-size:.95rem;color:var(--action-dark);font-weight:700;margin-bottom:1.6em;display:block;text-transform:uppercase;letter-spacing:.05em}
+.pricebox .cta{width:100%;margin-bottom:1.2em}
+.pricebox .trust{list-style:none;padding:0;margin:1.2em 0 0;display:grid;gap:.5em;font-size:.94rem;color:var(--ink-soft);text-align:left;max-width:280px;margin-left:auto;margin-right:auto}
+.pricebox .trust li{padding-left:1.5em;position:relative}
+.pricebox .trust li::before{content:"✓";position:absolute;left:0;top:0;color:var(--action-dark);font-weight:800}
+.bump-preview{margin:1.8em auto 0;max-width:560px;background:var(--action-10);border:1.5px dashed var(--action-dark);border-radius:var(--radius);padding:1.2em 1.4em;font-size:.95rem;color:var(--ink-soft);line-height:1.55}
+.bump-preview strong{color:var(--action-dark);font-weight:600}
+
+/* ===== Stack de valor table ===== */
+.stack-table{margin:1.6em auto 0;max-width:600px;background:var(--bg-card);border-radius:var(--radius);padding:1.5em 1.2em;box-shadow:var(--shadow-sm);font-size:.95rem}
+.stack-table h4{text-align:center;margin-bottom:1em;color:var(--primary)}
+.stack-row{display:grid;grid-template-columns:1fr auto;gap:1em;padding:.6em 0;border-bottom:1px solid var(--primary-10);align-items:start}
+.stack-row:last-child{border-bottom:0}
+.stack-row.bonus{background:var(--action-10);margin:.4em -.6em;padding:.6em;border-radius:8px;border-bottom:0}
+.stack-row.total{border-top:2px solid var(--primary);margin-top:.4em;padding-top:.8em;font-weight:700;color:var(--primary)}
+.stack-name{line-height:1.4}
+.stack-name small{display:block;color:var(--ink-mute);font-size:.85em;font-weight:400;margin-top:.15em}
+.stack-value{font-family:'Inter',system-ui,sans-serif;font-weight:600;color:var(--primary);white-space:nowrap}
+.stack-row.bonus .stack-value{color:var(--action-dark)}
+.stack-row.bonus .stack-value::after{content:" GRATIS";font-size:.75em;color:var(--action-dark);background:var(--action-20);padding:.15em .5em;border-radius:4px;margin-left:.4em;font-family:'Inter',sans-serif}
+
+/* ===== Para quién NO es (bloco de qualificação negativa) ===== */
+.not-for{background:var(--warn-bg);border-radius:var(--radius-lg);padding:2em 1.6em;border:1.5px solid #E8C5B0;max-width:680px;margin:0 auto}
+.not-for h3{color:var(--warn);text-align:center;margin-bottom:1em;font-family:'Inter',system-ui,sans-serif}
+.not-for ul{list-style:none;padding:0;margin:0 0 1.5em;display:grid;gap:.9em}
+.not-for li{padding-left:1.8em;position:relative;color:var(--ink);line-height:1.5}
+.not-for li::before{content:"✗";position:absolute;left:0;top:0;color:var(--warn);font-weight:800;font-size:1.2em}
+.not-for .closer{font-family:'Inter',system-ui,sans-serif;font-style:italic;text-align:center;color:var(--warn);font-size:1.05rem;line-height:1.45;padding-top:.5em;border-top:1px solid #E8C5B0}
+
+/* ===== Objeciones (acordeão simples) ===== */
+.objections{display:grid;gap:.8em;margin-top:1.6em}
+.objections details{background:var(--bg-card);border-radius:var(--radius);padding:1.1em 1.3em;box-shadow:var(--shadow-sm);cursor:pointer}
+.objections summary{font-family:'Inter',system-ui,sans-serif;font-weight:600;color:var(--primary);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1em;line-height:1.4;font-size:1.05rem}
+.objections summary::-webkit-details-marker{display:none}
+.objections summary::after{content:"+";font-size:1.6em;color:var(--action-dark);font-weight:800;line-height:1;font-family:'Inter',sans-serif}
+.objections details[open] summary::after{content:"–"}
+.objections details p{margin:.9em 0 .2em;color:var(--ink-soft);font-size:.97rem;line-height:1.6}
+
+/* ===== Prova social ===== */
+.social-amb{background:var(--primary);color:var(--bg);padding:1.8em 1.5em;border-radius:var(--radius-lg);margin-bottom:2em}
+.social-amb h3{color:var(--action);font-family:'Inter',system-ui,sans-serif;margin-bottom:.5em}
+.social-amb p{color:rgba(247,242,231,.92);margin-bottom:.8em;line-height:1.55}
+.social-amb p:last-child{margin-bottom:0}
+.social-numbers{display:flex;justify-content:center;flex-wrap:wrap;gap:1.5em;margin:1.5em 0;text-align:center}
+.social-num{background:var(--bg-card);padding:1.2em 1.5em;border-radius:var(--radius);box-shadow:var(--shadow-sm);min-width:140px}
+.social-num .n{font-family:'Inter',system-ui,sans-serif;font-size:2rem;font-weight:700;color:var(--primary);display:block;line-height:1}
+.social-num .l{display:block;font-size:.82rem;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-top:.4em}
+.placeholder-note{background:var(--action-10);border:1.5px dashed var(--action-dark);padding:1em 1.2em;border-radius:var(--radius);font-size:.9rem;color:var(--ink-soft);line-height:1.5;margin-top:1.5em}
+.placeholder-note strong{color:var(--action-dark)}
+
+/* ===== Garantía ===== */
+.warranty{background:var(--bg-card);border-radius:var(--radius-lg);padding:2em 1.8em;box-shadow:var(--shadow);border:2px solid var(--action);max-width:680px;margin:0 auto;position:relative}
+.warranty::before{content:"🛡️";position:absolute;top:-22px;left:50%;transform:translateX(-50%);background:var(--bg);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8em;border:2px solid var(--action)}
+.warranty h3{font-family:'Inter',system-ui,sans-serif;color:var(--primary);text-align:center;margin-top:.6em;margin-bottom:.8em}
+.warranty p{color:var(--ink-soft);text-align:center;line-height:1.6}
+.warranty p:last-child{color:var(--primary);font-weight:600;margin-bottom:0;font-family:'Inter',system-ui,sans-serif;font-style:italic}
+
+/* ===== Urgência ===== */
+.urgency-block{background:var(--action-10);border-left:5px solid var(--action-dark);padding:1.4em 1.6em;border-radius:var(--radius);max-width:640px;margin:0 auto}
+.urgency-block h3{color:var(--action-dark);font-family:'Inter',system-ui,sans-serif;margin-bottom:.5em}
+.urgency-block p{color:var(--ink);line-height:1.55;margin-bottom:.4em}
+.urgency-block p:last-child{margin-bottom:0;font-weight:500}
+
+/* ===== FAQ ===== */
+.faq{display:grid;gap:.8em;margin-top:1.6em}
+.faq details{background:var(--bg-card);border-radius:var(--radius);padding:1.1em 1.3em;box-shadow:var(--shadow-sm);cursor:pointer}
+.faq summary{font-family:'Inter',system-ui,sans-serif;font-weight:600;color:var(--primary);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1em;line-height:1.4;font-size:1.02rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5em;color:var(--action-dark);font-weight:800;line-height:1;font-family:'Inter',sans-serif}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:.8em 0 .2em;color:var(--ink-soft);font-size:.96rem;line-height:1.6}
+
+/* ===== Final CTA ===== */
+.final{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-deep) 100%);text-align:center}
+.final h2{font-family:'Inter',system-ui,sans-serif;font-size:clamp(1.7rem,4.2vw,2.6rem);max-width:560px;margin-left:auto;margin-right:auto;color:var(--primary)}
+.final .lead{max-width:560px;margin:1em auto 1.4em;color:var(--ink-soft);font-size:1.05rem}
+.final .recap{font-family:'Inter',system-ui,sans-serif;font-style:italic;color:var(--primary-soft);max-width:520px;margin:1em auto 1.8em;line-height:1.55;font-size:1.02rem}
+
+/* ===== PS ===== */
+.ps-block{background:var(--bg-card);border-left:4px solid var(--primary);padding:1.8em 1.8em;border-radius:var(--radius);max-width:640px;margin:2em auto 0;box-shadow:var(--shadow-sm)}
+.ps-block .ps-label{font-family:'Inter',system-ui,sans-serif;font-weight:700;color:var(--primary);font-size:1.15rem;margin-bottom:.6em;display:block}
+.ps-block p{line-height:1.65;margin-bottom:.8em}
+.ps-block .punchline{font-family:'Inter',system-ui,sans-serif;font-style:italic;color:var(--primary);font-size:1.1rem;line-height:1.5;margin:1em 0;border-top:1px solid var(--primary-10);padding-top:1em}
+
+/* ===== Disclaimer ===== */
+.disclaimer{background:var(--warn-bg);border-top:3px solid var(--warn);padding:2.2em 1.2em}
+.disclaimer .wrap{max-width:720px;margin:0 auto}
+.disclaimer h3{color:var(--warn);display:flex;align-items:center;gap:.5em;margin-bottom:.8em;font-family:'Inter',system-ui,sans-serif}
+.disclaimer p{font-size:.94rem;color:var(--ink-soft);line-height:1.6}
+
+/* ===== Footer ===== */
+footer{background:#1A1612;color:#A89F92;padding:2.2em 1.2em;font-size:.86rem;text-align:center;line-height:1.7}
+footer .wrap{max-width:720px;margin:0 auto}
+footer a{color:#D9C9B0}
+footer .tiny{color:#6E665C}
+
+/* ===== Desktop breakpoints ===== */
+@media (min-width:720px){
+  :root{--maxw:720px}
+  .piezas{grid-template-columns:1fr 1fr}
+  .compare{grid-template-columns:1fr 1fr}
+  .eco-grid{grid-template-columns:1fr 1fr 1fr}
+}
+@media (min-width:980px){
+  :root{--maxw:760px}
+  .steps{grid-template-columns:1fr 1fr 1fr}
+  .benefits{grid-template-columns:1fr 1fr;gap:.8em 1.2em}
+  section{padding:clamp(3.5rem,5.5vw,5rem) 1.2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================== -->
+<!-- 1. TOP BAR -->
+<!-- ============================================== -->
+<div class="bar">🐾 <strong>OFERTA DE LANZAMIENTO</strong> · Pago seguro · Acceso inmediato</div>
+
+<!-- ============================================== -->
+<!-- 2. HERO -->
+<!-- ============================================== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">🐾 Nuevo · Para perro y gato</span>
+    <h1>Deja el pienso industrial — y mira a tu peludo renacer en 14 días.</h1>
+    <p class="sub">Una guía con <strong>40 recetas</strong> (25 perro + 15 gato), calculadora de porción por peso, tabla de alimentos prohibidos por especie y plan de transición de 14 días. Sin volverte nutricionista. Sin gastar una fortuna.</p>
+
+    <ul class="hero-bullets">
+      <li><strong>40 recetas</strong> — 25 perro · 15 gato · cachorro, adulto y senior</li>
+      <li><strong>Calculadora multi-pet</strong> por peso (Google Sheets duplicable)</li>
+      <li><strong>Tabla de alimentos prohibidos</strong> por especie (imprimible)</li>
+      <li><strong>Plan de transición de 14 días</strong> — paso a paso</li>
+    </ul>
+
+    <img src="imagens/01-hero-composition.webp"
+         alt="Multi-Pet Nutrición Natural — recetario, calculadora y comida casera para perro y gato"
+         class="hero-image" loading="eager" />
+
+    <div class="cta-row">
+      <a href="HOTMART_CHECKOUT_URL" class="cta" data-track="cta-hero">Empezar hoy — $14.90 USD</a>
+      <span class="cta-micro">Acceso inmediato · Garantía 7 días · Pago seguro</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 3. APERTURA / PROPOSTA DE VALOR -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="center">Hace meses que sospechas algo.</h2>
+
+    <p>El pienso "premium" que le compras a tu peludo cuesta $80, $120, a veces $150 USD al mes. Y aun así lo ves comer sin ganas, con el pelo opaco, ganando peso o con la digestión revuelta.</p>
+
+    <p>Lees la etiqueta y no entiendes la mitad. "Subproductos cárnicos". "Harinas animales". Colorantes. Conservantes. "Aromas artificiales".</p>
+
+    <p style="font-family:'Inter',system-ui,sans-serif;font-style:italic;color:var(--primary);font-size:1.15rem;text-align:center;margin:1.5em 0">Eso es lo que come tu peludo todos los días.</p>
+
+    <p><strong>Multi-Pet Nutrición Natural</strong> te enseña a cocinarle comida real — perro o gato, en cada etapa de su vida — en 15 minutos al día, con ingredientes del supermercado, por menos de lo que pagas hoy.</p>
+
+    <p>No es consejo veterinario. No prometemos milagros. Te damos cuatro herramientas que funcionan juntas: 40 recetas, una calculadora que te dice cuántos gramos servir, una tabla con todo lo prohibido por especie, y un plan día por día para hacer la transición sin que se enferme.</p>
+
+    <p>Lo que decidas cocinarle a partir de hoy es asunto tuyo. Nosotros solo te abrimos el camino.</p>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 4. IDENTIFICAÇÃO DA DOR (PARA TI SI) -->
+<!-- ============================================== -->
+<section class="qual">
+  <div class="wrap">
+    <h2>Si llegaste hasta aquí, probablemente reconoces alguna de estas escenas.</h2>
+    <ul>
+      <li>Le sirves el pienso "premium" caro. Lo huele. Lo prueba. Se va. Como si estuviera castigado de tener que comer eso otra vez.</li>
+      <li>Cambias de marca pensando "ahora sí". La nueva cuesta $150 y la etiqueta dice lo mismo: subproductos, harinas, conservantes, aromas. Cambia el envase. No el problema.</li>
+      <li>Notás el pelo opaco. La piel con escamas. El peso que no baja aunque coma "ligero". El estómago que se queja después de cada comida. Y empezás a pensar: "esto es la comida".</li>
+      <li>Tenés perro Y gato. Todos los cursos que encontraste solo cubren al perro. Tu gato siempre queda afuera de la conversación, como si no importara.</li>
+      <li>Pensaste "voy a cocinarle yo". Te frenó la pregunta básica: ¿cuánto le doy? ¿qué no puede comer? ¿cómo paso del pienso a comida real sin que se enferme? Sin respuestas, no empezaste.</li>
+      <li>Sabés que el veterinario es la última línea. Querrías llegar menos veces. Querrías prevenir, no apagar incendios.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 5. APRESENTAÇÃO DA SOLUÇÃO + 4 PIEZAS -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="intro-block">
+      <h2>Cuatro herramientas que trabajan juntas.</h2>
+      <p class="muted">Porque cocinar bien para tu peludo no es solo "tener recetas".</p>
+    </div>
+
+    <p>Multi-Pet no es un curso de 40 horas. No es mentoría mensual. No prometemos que tu peludo viva 25 años.</p>
+
+    <p>Es exactamente lo que dice el nombre: guía + herramientas utilitarias, apoyadas en literatura veterinaria pública (NRC, WSAVA, ASPCA). Nada inventado. Lo que ya funciona, organizado en un sistema que cualquier dueño puede aplicar mañana.</p>
+
+    <div class="piezas">
+      <div class="pieza">
+        <span class="pieza-num">1</span>
+        <img src="imagens/02-mockup-pdf-capa.webp" alt="Capa del recetario Multi-Pet Nutrición Natural — 40 recetas caseras para perro y gato" class="pieza-img" loading="lazy" />
+        <h3>Guía PDF — 40 recetas caseras</h3>
+        <p>25 perro (9 cachorro · 10 adulto · 6 senior) + 15 gato (5 gatito · 7 adulto · 3 senior, con énfasis en taurina). Cada receta: ingredientes accesibles del supermercado, preparación en 15 minutos, porción base, conservación y notas.</p>
+      </div>
+
+      <div class="pieza">
+        <span class="pieza-num">2</span>
+        <img src="imagens/03-calculadora-tablet.webp" alt="Calculadora Multi-Pet en Google Sheets mostrando datos del perro y porción diaria calculada" class="pieza-img" loading="lazy" />
+        <h3>Calculadora Multi-Pet — Sheets duplicable</h3>
+        <p>Llenas 6 datos del peludo (especie, peso, etapa, castración, actividad, condición). La planilla calcula la porción diaria. Fórmula NRC validada con 41 combinaciones tabuladas. Una versión para perro, otra para gato.</p>
+      </div>
+
+      <div class="pieza">
+        <span class="pieza-num">3</span>
+        <img src="imagens/04-tabla-prohibidos.webp" alt="Tabla de alimentos prohibidos para perro impresa y pegada en una nevera de cocina casera" class="pieza-img" loading="lazy" />
+        <h3>Tabla de Alimentos Prohibidos</h3>
+        <p>1 página imprimible. Cara A: prohibidos perro · Cara B: prohibidos gato. Cada alimento con nivel de riesgo (CRÍTICO / GRAVE / MODERADO) y síntomas. Imprimís una vez. Pegás en la cocina. Listo.</p>
+      </div>
+
+      <div class="pieza">
+        <span class="pieza-num">4</span>
+        <img src="imagens/05-timeline-14d.webp" alt="Plan visual de transición de 14 días: 14 boles mostrando la transición gradual del pienso a la comida casera natural" class="pieza-img" loading="lazy" />
+        <h3>Plan de Transición 14 Días</h3>
+        <p>Día por día: qué porcentaje de pienso y qué porcentaje de casera servir, qué señales observar, cuándo pausar. Versiones leve diferentes para perro y gato (los gatos suelen tardar más en aceptar).</p>
+      </div>
+    </div>
+
+    <p class="pieza-sintese">La guía te dice <strong>qué</strong> cocinar. La calculadora te dice <strong>cuánto</strong>. La tabla te dice <strong>qué evitar</strong>. El plan te dice <strong>cómo migrar</strong>. Las cuatro piezas se necesitan entre sí. Por eso van juntas.</p>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 5b. BONUS card destacado -->
+<!-- ============================================== -->
+<section>
+  <div class="wrap">
+    <div style="background:linear-gradient(135deg,var(--action-10) 0%,var(--bg-card) 100%);border:2px dashed var(--action-dark);border-radius:var(--radius-lg);padding:2em 1.8em;text-align:center;max-width:640px;margin:0 auto">
+      <span style="display:inline-block;background:var(--action);color:var(--primary);font-size:.78rem;font-weight:800;padding:.25em .9em;border-radius:30px;letter-spacing:.1em;margin-bottom:1em;text-transform:uppercase">🎁 Bonus gratis hoy</span>
+      <h3 style="color:var(--primary);margin-bottom:.5em">Manual de Primeros Auxilios Alimentarios</h3>
+      <img src="imagens/10-bonus-manual.webp" alt="Manual de Primeros Auxilios Alimentarios abierto sobre una mesa de cocina, junto a un kit de emergencia, termómetro y libreta con número del veterinario" class="bonus-img" loading="lazy" />
+      <p class="muted" style="margin-bottom:.6em">Qué hacer si tu peludo consumió algo tóxico · 10 señales de alerta (vómito, letargia, convulsiones) · kit básico en casa · cuándo correr al veterinario.</p>
+      <p class="tiny"><em>Valor real $19.90 USD — incluido gratis con tu compra hoy.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 6. BENEFÍCIOS -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="center">Lo que cambia, semana a semana.</h2>
+    <ul class="benefits">
+      <li>Tu peludo deja de comer "porque tiene que". Empieza a esperar la hora de la comida con la cola moviéndose. Eso es lo primero que cambia, en la primera semana.</li>
+      <li>Dejás de gastar $80, $120, $150 USD al mes en pienso premium del que ni estás seguro. Pasás a $20-30 USD en ingredientes naturales. En 3 meses, el método ya se pagó 10 veces.</li>
+      <li>Sabés exactamente qué hay en cada plato porque vos lo cocinaste. Sin subproductos. Sin colorantes. Sin "aromas naturales idénticos".</li>
+      <li>El pelo recupera brillo. La piel deja de descamarse. La digestión se calma. La energía vuelve. No por magia: por cocinarle comida real.</li>
+      <li>Perro Y gato comen casera con recetas, porciones y prohibidos por especie. Se acabó "al gato le sigo dando atún hasta que aprendamos".</li>
+      <li>La calculadora elimina el error #1 del principiante: servir mal la porción. Pesás una vez. La planilla hace el resto.</li>
+      <li>La tabla vive pegada en tu cocina. La próxima vez que el niño le quiera dar chocolate, mirás la tabla, decís "no" con argumento, evitás la urgencia veterinaria.</li>
+      <li>El bonus de Primeros Auxilios te prepara para el peor caso. Si algo pasa, sabés qué hacer en los primeros 10 minutos antes de llegar al veterinario.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 7. ANTES/DESPUÉS + 3 PASOS -->
+<!-- ============================================== -->
+<section>
+  <div class="wrap">
+    <h2 class="center">De pienso industrial a comida real, en 3 pasos.</h2>
+
+    <div class="compare">
+      <div class="col antes">
+        <img src="imagens/09a-perro-antes.webp" alt="Perro acostado sin ganas frente a un bol de pienso industrial casi sin tocar — energía baja, mirada apática" class="compare-image" loading="lazy" />
+        <h3>😩 Antes</h3>
+        <ul>
+          <li>$80–150 USD/mes en pienso premium</li>
+          <li>No sabes qué hay realmente dentro</li>
+          <li>Tu peludo come sin ganas</li>
+          <li>Pelaje opaco, energía baja</li>
+          <li>Visitas al vet por problemas</li>
+        </ul>
+      </div>
+      <div class="col despues">
+        <img src="imagens/09b-perro-despues.webp" alt="Mismo perro de pie, alerta y con pelaje brillante, junto a un bol de comida casera natural — energía recuperada" class="compare-image" loading="lazy" />
+        <h3>✨ Después</h3>
+        <ul>
+          <li>$20–30 USD/mes en ingredientes</li>
+          <li>Tú eliges cada ingrediente</li>
+          <li>Tu peludo espera la hora de comer</li>
+          <li>Pelaje brillante, juega como cachorro</li>
+          <li>Más prevención, menos consultas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="num">1</span>
+        <h3>Descargás la guía y abrís la calculadora</h3>
+        <p>Tu compra es inmediata. Llenás el peso de tu peludo en 30 segundos.</p>
+      </div>
+      <div class="step">
+        <span class="num">2</span>
+        <h3>Elegís una receta y la preparás en 15 min</h3>
+        <p>Ingredientes del supermercado, paso a paso. Sin tecnología complicada.</p>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <h3>Seguís el plan de transición 14 días</h3>
+        <p>Día por día, sin cambios bruscos. A los 15 días, tu peludo come 100% natural.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 8. ECONOMÍA MENSUAL -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="center">Cuánto gastás hoy vs. cuánto podés gastar.</h2>
+
+    <div class="eco">
+      <div class="eco-title">Ejemplo — Perro mediano (10 kg) · 1 mes</div>
+      <div class="eco-grid">
+        <div class="eco-cell bad">
+          <span class="price">$120</span>
+          <span class="label">Pienso premium</span>
+          <span class="note">ingredientes ocultos</span>
+        </div>
+        <div class="eco-cell mid">
+          <span class="price">$50</span>
+          <span class="label">Pienso común</span>
+          <span class="note">ingredientes baratos</span>
+        </div>
+        <div class="eco-cell good">
+          <span class="price">$25</span>
+          <span class="label">Casera natural</span>
+          <span class="note">vos elegís todo · 40 recetas</span>
+        </div>
+      </div>
+      <div class="eco-callout">💰 El método se paga solo en <strong>4 días</strong> de aplicación. Después: solo ahorro mes a mes.</div>
+      <p class="eco-savings"><strong>Ahorro anual proyectado: $1.140 USD</strong></p>
+      <img src="imagens/08-comida-casera-bowl.webp" alt="Bol de comida casera natural balanceada para perro: pollo desmenuzado, arroz blanco, brócoli y zanahoria en daditos, vista cenital sobre mantel de lino crema" class="eco-image" loading="lazy" />
+      <p class="tiny center" style="margin-top:1em">*Ejemplo basado en perro adulto de 10 kg. Tu ahorro real depende del peso, los ingredientes que elijas y el precio del pienso que pagás hoy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 9. PROVA SOCIAL (ambiental + placeholder honesto) -->
+<!-- ============================================== -->
+<section>
+  <div class="wrap">
+    <div class="social-amb">
+      <h3>Lo que ya está cambiando</h3>
+      <p>El pienso premium subió 30-40% en los últimos 3 años. Al mismo tiempo, las búsquedas por "comida casera para perro" y "BARF para gato" crecen de forma sostenida en Google Trends.</p>
+      <div class="duo-pets">
+        <img src="imagens/06-perro-comiendo.webp" alt="Perro labrador color dorado comiendo comida casera natural de un bol cerámico — pelaje brillante, postura activa" loading="lazy" />
+        <img src="imagens/07-gato-comiendo.webp" alt="Gato tabby gris comiendo comida casera de un bol cerámico en una cocina iluminada por luz natural" loading="lazy" />
+      </div>
+      <p>No es moda. Es una respuesta directa a precios crecientes y desconfianza con etiquetas que nadie entiende. Lo que faltaba era un método unificado que cubriera perro y gato, con porciones calculadas y plan de transición real. Eso es lo que armamos.</p>
+    </div>
+
+    <div class="placeholder-note">
+      <strong>📌 Nota:</strong> Multi-Pet es un producto recién lanzado. En las próximas semanas vamos a publicar acá los primeros testimonios reales de tutores que migraron del pienso industrial con este método. No inventamos testimonios. Cuando los tengamos escritos por personas reales, los vas a ver acá con nombre.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 10. OFERTA — Stack expandido + caixa pricing -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="center">La oferta completa.</h2>
+
+    <div class="stack-table">
+      <h4>Lo que recibís hoy</h4>
+      <div class="stack-row">
+        <div class="stack-name">Guía PDF — 40 recetas caseras<br><small>25 perro + 15 gato, por etapa de vida</small></div>
+        <div class="stack-value">$29.90</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-name">Calculadora Multi-Pet — Sheets vitalicia<br><small>fórmula NRC + 41 combinaciones</small></div>
+        <div class="stack-value">$24.90</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-name">Tabla de Alimentos Prohibidos<br><small>perro + gato, imprimible</small></div>
+        <div class="stack-value">$14.90</div>
+      </div>
+      <div class="stack-row">
+        <div class="stack-name">Plan de Transición 14 Días<br><small>día por día, perro y gato</small></div>
+        <div class="stack-value">$14.90</div>
+      </div>
+      <div class="stack-row bonus">
+        <div class="stack-name">🎁 BONUS — Manual de Primeros Auxilios Alimentarios<br><small>10 señales + qué hacer + kit en casa</small></div>
+        <div class="stack-value">$19.90</div>
+      </div>
+      <div class="stack-row total">
+        <div class="stack-name">Valor total</div>
+        <div class="stack-value">$104.50 USD</div>
+      </div>
+    </div>
+
+    <div class="pricebox">
+      <div class="what">
+        <strong>Multi-Pet Nutrición Natural</strong>
+        Acceso Completo — 4 herramientas + 1 bonus
+      </div>
+      <div class="anchors">
+        <span class="strike">Valor de las piezas: $104.50 USD</span>
+        <span class="strike">Precio normal del pack: $24.90 USD</span>
+      </div>
+      <span class="price-hoy">$14.90 <small>USD</small></span>
+      <span class="price-tag">Precio de lanzamiento — 40% off</span>
+      <a href="HOTMART_CHECKOUT_URL" class="cta" data-track="cta-pricing">Empezar hoy — $14.90 USD</a>
+      <ul class="trust">
+        <li>Acceso inmediato (todo a tu correo)</li>
+        <li>Garantía 7 días — sin preguntas</li>
+        <li>Pago seguro</li>
+      </ul>
+    </div>
+
+    <div class="bump-preview">
+      💡 Al pagar verás una opción para agregar el <strong>Recetario de Premios y Galletas Caseras</strong> por $4.90 USD más. 12 recetas extra de snacks saludables (sin azúcar, sin xilitol) para entrenamiento y momentos especiales. Solo aparece una vez en el checkout.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 11. PARA QUIÉN NO ES (qualificação negativa) -->
+<!-- ============================================== -->
+<section>
+  <div class="wrap">
+    <div class="not-for">
+      <h3>Multi-Pet no es para vos si...</h3>
+      <ul>
+        <li>Buscás un programa de mentoría 1-a-1 con consultas mensuales personalizadas. Esto es una guía + herramientas, no un servicio.</li>
+        <li>Tu peludo tiene una condición médica activa (diabetes, falla renal, alergia diagnosticada) que requiere dieta especial bajo supervisión veterinaria. Empezá por tu vet primero.</li>
+        <li>Querés cocinar 100% BARF (carne cruda con huesos enteros). Las recetas de Multi-Pet son comida cocida con algunos elementos crudos suaves. Para BARF estricto existen cursos específicos.</li>
+        <li>Esperás "milagros en 7 días". Los resultados visibles aparecen entre la semana 2 y la 4. Si querés magia inmediata, este método no es para vos.</li>
+      </ul>
+      <p class="closer">Si reconocés alguno de los cuatro, guardá tu dinero. No es para vos, y preferimos que no compres a que te frustres.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 12. QUEBRA DE OBJEÇÕES -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <h2 class="center">Las dudas que escuchamos antes de cada compra.</h2>
+    <div class="objections">
+      <details>
+        <summary>"No tengo tiempo para cocinarle todos los días."</summary>
+        <p>Las recetas tardan 15 minutos en promedio. El tiempo del café de la mañana. La mayoría se conservan 3-4 días en heladera o 30 días en freezer. En la práctica: cocinás una vez, servís toda la semana.</p>
+      </details>
+      <details>
+        <summary>"No sé cocinar, va a salir mal."</summary>
+        <p>Si sabés hervir agua, picar zanahoria y cocinar arroz, ya sabés cocinarle a tu peludo. Las recetas no piden técnica. Piden ingredientes simples del supermercado. Sin sofrito francés. Sin temperaturas exactas. Sin equipo especial.</p>
+      </details>
+      <details>
+        <summary>"¿Y si mi peludo no acepta la comida casera?"</summary>
+        <p>Para eso existe el plan de transición de 14 días. No es "de un día para otro". Es paso a paso, mezclando porcentajes crecientes de casera con porcentajes decrecientes de pienso. El 80% de los peludos se adapta en la primera semana. Para el 20% más selectivo (sobre todo gatos acostumbrados al atún), la guía trae recetas específicas de alta palatabilidad.</p>
+      </details>
+      <details>
+        <summary>"Soy nuevo. ¿Necesito autorización del veterinario?"</summary>
+        <p>Si tu peludo está sano, las recetas son balanceadas con principios nutricionales generales (NRC + WSAVA + ASPCA). No necesitás autorización para cambiar a casera, igual que no la necesitás para cambiar de marca de pienso. Si tu peludo tiene condición médica diagnosticada, gestación o lactancia, consultá con tu veterinario antes. Multi-Pet es complemento, no sustituto del consejo veterinario.</p>
+      </details>
+      <details>
+        <summary>"Ya intenté antes y fue desastre."</summary>
+        <p>Probablemente te faltó una de las 4 piezas: no sabías cuánto (sin calculadora), no sabías qué evitar (sin tabla), cambiaste de golpe (sin plan 14 días) o no tenías recetas balanceadas (solo "pollito hervido"). Cocinarle sin sistema falla. Con sistema, funciona.</p>
+      </details>
+      <details>
+        <summary>"$14.90 me parece caro para un PDF."</summary>
+        <p>Otros recetarios del nicho cuestan $25-35 USD y cubren solo perro o solo gato. Multi-Pet cubre los dos a $14.90 USD. Y no es solo PDF: es PDF + calculadora interactiva + tabla imprimible + plan día por día + manual de emergencia. Cinco herramientas por menos de un kilo de pienso premium.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 13. GARANTÍA -->
+<!-- ============================================== -->
+<section>
+  <div class="wrap">
+    <div class="warranty">
+      <h3>Garantía 7 días — el riesgo es nuestro.</h3>
+      <p>Probás Multi-Pet por 7 días completos. Leés la guía. Abrís la calculadora. Imprimís la tabla. Empezás el plan de transición.</p>
+      <p>Si en 7 días sentís que el método no es para vos, por la razón que sea, escribís a Hotmart, hacés clic en "Solicitar reembolso" y te devuelven el 100% del dinero. Sin formularios. Sin discusión. Sin preguntar por qué.</p>
+      <p>Garantía respaldada por Hotmart. No podemos negarte el reembolso ni atrasarte: el sistema lo procesa automáticamente.</p>
+      <p>Vos arriesgás el tiempo de leer. Nosotros arriesgamos los $14.90.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 14. URGÊNCIA -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="urgency-block">
+      <h3>⏰ Precio de lanzamiento — válido hasta FECHA_LIMITE</h3>
+      <p>El 40% de descuento ($24.90 → $14.90) es promocional de la primera semana de lanzamiento. A partir de <strong>FECHA_LIMITE</strong>, el precio vuelve a $24.90 USD. Sin descuento. Sin promesa de retornar.</p>
+      <p>No es countdown que se reinicia cada 24 horas. Es una fecha real. Si entrás después, pagás $24.90.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 15. FAQ -->
+<!-- ============================================== -->
+<section>
+  <div class="wrap">
+    <h2 class="center">Preguntas frecuentes.</h2>
+    <div class="faq">
+      <details>
+        <summary>¿Funciona en mi país?</summary>
+        <p>Sí. Escrito en español neutro. Los ingredientes son básicos y se encuentran en cualquier supermercado. Si el tuyo tiene pollo, arroz, zanahoria, calabaza, avena y huevo, empezás hoy.</p>
+      </details>
+      <details>
+        <summary>¿En cuánto tiempo recibo el acceso?</summary>
+        <p>Inmediato. Apenas Hotmart confirma el pago, llega a tu correo: link del PDF, enlace a la calculadora Sheets, tabla imprimible y manual de Primeros Auxilios.</p>
+      </details>
+      <details>
+        <summary>¿Cuántas recetas exactamente y cómo están organizadas?</summary>
+        <p>40 recetas: 25 perro (9 cachorro · 10 adulto · 6 senior) + 15 gato (5 gatito · 7 adulto · 3 senior, con énfasis en taurina). Más bloques educativos: por qué no dar atún diariamente al gato, por qué evitar lácteos en gato adulto, cómo introducir nuevos ingredientes.</p>
+      </details>
+      <details>
+        <summary>¿Cómo funciona la calculadora? ¿Necesito Excel pagado?</summary>
+        <p>No. Está en Google Sheets, gratis, en la nube. Abrís el link, hacés clic en "Hacer una copia", queda guardada en tu Drive. Llenás 6 datos del peludo y te dice la porción diaria. Si tenés perro y gato, 2 copias (una para cada uno).</p>
+      </details>
+      <details>
+        <summary>¿Sirve solo para perro y gato? ¿Y otros animales?</summary>
+        <p>Por ahora solo perro y gato. Otros animales tienen requerimientos muy específicos que merecen guías propias. Preferimos cubrir bien dos especies a cubrir mal cinco.</p>
+      </details>
+      <details>
+        <summary>¿Puedo usar las recetas si mi peludo tiene una condición médica?</summary>
+        <p>Las recetas son balanceadas para peludos sanos. Si tu peludo tiene condición diagnosticada, gestación o lactancia, consultá con tu veterinario antes. Este recetario no sustituye consejo veterinario.</p>
+      </details>
+      <details>
+        <summary>¿Y si no me convence?</summary>
+        <p>Garantía 7 días sin preguntas vía Hotmart. Devolución 100% automática. No tenés que justificar nada.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 16. CTA FINAL -->
+<!-- ============================================== -->
+<section class="final">
+  <div class="wrap">
+    <h2>Tu peludo no va a vivir para siempre.</h2>
+    <p class="lead">Lo sabés. Por eso cada año, cada mes, cada plato importa.</p>
+    <p class="lead">Por $14.90 USD, menos de un kilo de pienso premium, empezás hoy un sistema que cambia cómo tu peludo come, se ve, se siente y se relaciona con vos a la hora de la comida.</p>
+
+    <div class="recap">40 recetas. Una calculadora. Una tabla. Un plan de 14 días. Un manual de emergencia.<br>Todo a tu correo en 30 segundos. Garantía de 7 días.</div>
+
+    <div class="cta-row">
+      <a href="HOTMART_CHECKOUT_URL" class="cta" data-track="cta-final">Empezar hoy — $14.90 USD</a>
+      <span class="cta-micro">Acceso inmediato · Garantía 7 días · Pago seguro</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 17. PS / FECHAMENTO -->
+<!-- ============================================== -->
+<section class="alt">
+  <div class="wrap">
+    <div class="ps-block">
+      <span class="ps-label">PS —</span>
+      <p>Llegaste hasta acá. Eso significa dos cosas: ya sabés que el pienso industrial no es la respuesta, y ya sabés que cocinarle real no tiene por qué ser complicado.</p>
+      <p>El descuento del 40% vence el <strong>FECHA_LIMITE</strong> y el precio vuelve a $24.90 USD. La garantía de 7 días te cubre del riesgo completo: si no te sirve, te devuelven la plata sin preguntas.</p>
+      <p class="punchline">Tu peludo no eligió el pienso industrial. Lo elegiste vos.<br>Hoy podés elegir distinto. 🐾</p>
+      <div class="cta-row center">
+        <a href="HOTMART_CHECKOUT_URL" class="cta" data-track="cta-ps">Empezar hoy — $14.90 USD</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 18. DISCLAIMER VETERINARIO -->
+<!-- ============================================== -->
+<section class="disclaimer">
+  <div class="wrap">
+    <h3>⚠️ Este recetario NO sustituye el consejo de un veterinario.</h3>
+    <p>Es una guía práctica + herramientas (calculadora, tabla, plan de transición) para alimentar a tu peludo con comida casera natural. Está basado en recomendaciones nutricionales generales de la literatura veterinaria pública (NRC, WSAVA, ASPCA).</p>
+    <p>Si tu peludo tiene condición médica, está en gestación o lactancia, o tienes cualquier duda sobre su salud, consulta siempre a tu profesional veterinario de confianza antes de aplicar.</p>
+    <p>Los resultados varían por individuo, raza y contexto. La calculadora es referencia inicial; observá el peso de tu peludo y ajustá conforme.</p>
+  </div>
+</section>
+
+<!-- ============================================== -->
+<!-- 19. FOOTER -->
+<!-- ============================================== -->
+<footer>
+  <div class="wrap">
+    <p>© 2026 Multi-Pet Nutrición Natural · Todos los derechos reservados</p>
+    <p>Producto comercializado vía Hotmart — pago seguro y entrega digital inmediata.<br>
+       <a href="POLITICA_PRIVACIDAD_URL">Política de Privacidad</a> · <a href="TERMINOS_URL">Términos y Condiciones</a> · <a href="mailto:CONTACTO_EMAIL">Contacto</a></p>
+    <p class="tiny" style="margin-top:1em">Este sitio no es parte del sitio de Facebook ni de Facebook Inc. Adicionalmente, este sitio no es endorsado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.</p>
+  </div>
+</footer>
+
+<!-- ============================================== -->
+<!-- TRACKING -->
+<!-- ============================================== -->
+<script>
+(function(){
+  var fired = {viewContent:false, addToCart:false, initiateCheckout:false};
+  setTimeout(function(){
+    if(!fired.viewContent && window.fbq){
+      fbq('track','ViewContent',{content_name:'multipet-lp',value:14.90,currency:'USD'});
+      fired.viewContent = true;
+    }
+  }, 5000);
+  document.querySelectorAll('[data-track]').forEach(function(el){
+    el.addEventListener('click', function(){
+      if(!fired.addToCart && window.fbq){
+        fbq('track','AddToCart',{content_name:'multipet-nutricion',value:14.90,currency:'USD'});
+        fired.addToCart = true;
+      }
+      if(!fired.initiateCheckout && window.fbq){
+        fbq('track','InitiateCheckout',{content_name:'multipet-nutricion',value:14.90,currency:'USD'});
+        fired.initiateCheckout = true;
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
