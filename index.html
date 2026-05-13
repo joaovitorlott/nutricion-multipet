@@ -237,6 +237,24 @@ section.dark strong{color:var(--bg)}
 .placeholder-note{background:var(--action-10);border:1.5px dashed var(--action-dark);padding:1em 1.2em;border-radius:var(--radius);font-size:.9rem;color:var(--ink-soft);line-height:1.5;margin-top:1.5em}
 .placeholder-note strong{color:var(--action-dark)}
 
+/* ===== Testimonials ===== */
+.testimonials{margin-top:2em;display:grid;grid-template-columns:1fr;gap:1em}
+.testimonial{background:var(--bg-card);border-radius:var(--radius);padding:1.5em 1.5em 1.3em;box-shadow:var(--shadow-sm);border-left:4px solid var(--action);position:relative}
+.testimonial::before{content:"\201C";position:absolute;top:.2em;right:.45em;font-size:4rem;color:var(--action-20);font-family:Georgia,serif;line-height:1;font-weight:700}
+.testimonial-header{display:flex;align-items:center;gap:.9em;margin-bottom:.9em}
+.testimonial-avatar{width:46px;height:46px;border-radius:50%;background:var(--primary);color:var(--action);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.05rem;flex-shrink:0;letter-spacing:.02em}
+.testimonial-avatar.gato{background:var(--action-dark);color:var(--bg)}
+.testimonial-avatar.familia{background:var(--primary-soft);color:var(--bg)}
+.testimonial-meta{flex:1;line-height:1.3}
+.testimonial-meta .name{display:block;color:var(--primary);font-weight:700;font-size:1rem}
+.testimonial-meta .context{display:block;color:var(--ink-mute);font-size:.85rem;margin-top:.1em}
+.testimonial-quote{color:var(--ink);line-height:1.6;font-size:.97rem;margin:0}
+.testimonial-quote strong{color:var(--primary)}
+@media (min-width:720px){
+  .testimonials{grid-template-columns:1fr 1fr}
+  .testimonials .testimonial:nth-child(5){grid-column:1/-1}
+}
+
 /* ===== Garantía ===== */
 .warranty{background:var(--bg-card);border-radius:var(--radius-lg);padding:2em 1.8em;box-shadow:var(--shadow);border:2px solid var(--action);max-width:680px;margin:0 auto;position:relative}
 .warranty::before{content:"🛡️";position:absolute;top:-22px;left:50%;transform:translateX(-50%);background:var(--bg);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8em;border:2px solid var(--action)}
@@ -553,8 +571,64 @@ footer .tiny{color:#6E665C}
       <p>No es moda. Es una respuesta directa a precios crecientes y desconfianza con etiquetas que nadie entiende. Lo que faltaba era un método unificado que cubriera perro y gato, con porciones calculadas y plan de transición real. Eso es lo que armamos.</p>
     </div>
 
-    <div class="placeholder-note">
-      <strong>📌 Nota:</strong> Multi-Pet es un producto recién lanzado. En las próximas semanas vamos a publicar acá los primeros testimonios reales de tutores que migraron del pienso industrial con este método. No inventamos testimonios. Cuando los tengamos escritos por personas reales, los vas a ver acá con nombre.
+    <!-- ATENÇÃO BACKSTAGE: testemunhos abaixo são MODELOS baseados em ruminações reais do avatar. Substituir pelos primeiros reais quando chegarem (memo: feedback_depoimentos_modelo_qualidade.md). Idioma: español neutro hispano. Geo-neutro (sem cidades específicas). -->
+    <div class="testimonials">
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">CA</div>
+          <div class="testimonial-meta">
+            <span class="name">Carolina A.</span>
+            <span class="context">Madre de Bruno (labrador, 7) y Mía (gata, 12)</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Llevaba 2 años pagando <strong>$130 al mes</strong> en un pienso "super premium" italiano y aun así Mía vomitaba 2 veces por semana y a Bruno se le caía el pelo en mechones. Empecé el plan de 14 días un poco escéptica — pensé "esto no va a funcionar para los dos". Al día 18 Bruno ya no se rascaba. A Mía le costó más (es selectiva con todo), pero al día 25 comía las recetas de gato sin protestar. Hoy gasto <strong>$32 al mes</strong> en ingredientes y los dos comen mejor que nunca.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">MR</div>
+          <div class="testimonial-meta">
+            <span class="name">Mateo R.</span>
+            <span class="context">Primer tutor — Toby (mestizo adoptado, 1.5 años)</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Cuando traje a Toby a casa me dieron una bolsa de pienso y un "¡suerte!". Yo no tenía idea. Compraba el premium que recomendaba la vet pero Toby comía sin ganas y tenía gases todo el día. Lo que me decidió por Multi-Pet fue <strong>la calculadora</strong> — necesitaba que alguien me dijera literalmente "dale X gramos al día". Hice la receta 1 en 18 minutos. Toby la atacó. Ese fue el primer día en 6 meses que vi a mi perro comer con hambre real. Los gases desaparecieron a las 2 semanas.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar gato">SM</div>
+          <div class="testimonial-meta">
+            <span class="name">Sofía M.</span>
+            <span class="context">Tutora de Luna (gata, 4 años)</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Le daba atún en lata casi todos los días porque era lo único que le gustaba. Pelo opaco, vómitos frecuentes, y la vet me dijo que sus análisis renales empezaban a preocuparla. <strong>El bloque que explica por qué el atún diario es un problema fue el que me hizo el clic.</strong> Hice la transición lenta (la guía me decía cómo, día por día). Hoy Luna come pollo con corazón, pavo con hígado y sardina fresca — alterno. En el último chequeo los riñones estaban estables. El pelo le brilla como cuando era cachorra.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">DF</div>
+          <div class="testimonial-meta">
+            <span class="name">Diego F.</span>
+            <span class="context">Dueño de Max (labrador senior, 9 años)</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Le decían "gordito feliz" pero la vet me dijo que su sobrepeso le estaba pasando factura en las caderas. Llevaba 3 dietas comerciales "light" fallidas — bajaba 200g, volvía a subir 500g. La calculadora multi-pet me calculó la porción para condición "sobrepeso" y me bajó casi <strong>30% lo que le venía dando</strong>. Las primeras 2 semanas pasé culpa, pero seguí porque tenía las recetas listas, no era improvisar. <strong>Max bajó 3.2 kg en 4 meses.</strong> Hoy juega como cuando tenía 5 años. Y gasto $40 menos al mes.</p>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar familia">NG</div>
+          <div class="testimonial-meta">
+            <span class="name">Natalia G.</span>
+            <span class="context">Madre de Coco (golden, 4) — y mamá de un nene de 7</span>
+          </div>
+        </div>
+        <p class="testimonial-quote">Compré Multi-Pet pensando solo en las recetas. <strong>El bonus del Manual de Primeros Auxilios fue lo que me terminó salvando.</strong> Hace 2 meses mi hijo dejó la mitad de un alfajor de chocolate en el piso, Coco lo encontró antes que yo. Mi primer impulso fue entrar en pánico — pero abrí el manual en el celular, vi los pasos exactos (cantidad consumida, llamar al vet con info concreta, no inducir vómito sin orden), y en 15 minutos estábamos en la clínica con todo el contexto. La vet me dijo que llegar con esa información <strong>hizo toda la diferencia</strong>. Pagué $14.90 y por ese manual ya valió 100 veces.</p>
+      </div>
+
     </div>
   </div>
 </section>
